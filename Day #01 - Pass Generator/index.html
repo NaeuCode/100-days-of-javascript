@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =============== GOOGLE ICONS  =============== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <!-- =============== CSS =============== -->
+    <link rel="stylesheet" href="style.css">
+    <!-------------------------------------------->
+    <title>#1 Pass Generator | NaeuCode</title>
+  </head>
+  <body>
+    <!-- =============== Main =============== -->
+    <div class="container">
+      <h2>Pass Generator</h2>
+      <div class="wrapper">
+      
+        <!-- ---------- Pass BOX ---------- -->
+        <div class="input-box">
+          <input type="text" disabled>
+          <span class="material-symbols-rounded">
+            copy_all
+            </span>
+        </div>
+        <!-- ---------- Pass Indicator ---------- -->
+        <div class="pass-indicator"></div>
+        <!-- ---------- Pass Length ---------- -->
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Password Length</label>
+            <span class="counter"></span>
+          </div>
+          <input type="range" min="1" max="30" value="15" step="1">
+        </div>
+        <!-- ---------- Pass Settings ---------- -->
+        <div class="pass-settings">
+          <label class="title">Password Settings</label>
+          <!-- ----- Pass Options ----- -->
+          <ul class="options">
+            <li class="option">
+              <label for="lowercase">Lowercase (a-z)</label>
+              <input type="checkbox" id="lowercase" checked>
+            </li>
+            <li class="option">
+              <label for="uppercase">Uppercase (A-Z)</label>
+              <input type="checkbox" id="uppercase" >
+            </li>
+            <li class="option">
+              <label for="numbers">Numbers (0-9)</label>
+              <input type="checkbox" id="numbers" >
+            </li>
+            <li class="option">
+              <label for="symbols">Symbols (a-z)</label>
+              <input type="checkbox" id="symbols" >
+            </li>
+          </ul>
+        </div>
+        <!-- ---------- Generate Button ---------- -->
+
+        <button class="generate-btn">Generate Password</button>
+      </div>
+    </div>
+    <!-- =============== JS =============== -->
+    <script src="script.js"></script>
+  </body>
+</html>
