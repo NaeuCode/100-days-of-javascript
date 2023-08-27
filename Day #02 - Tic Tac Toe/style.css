@@ -1,0 +1,100 @@
+/* =================== Google Fonts =================== */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+
+/*=================== BASE ===================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #2872fb, #61ffcd);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=================== MAIN ===================*/
+.wrapper {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vmin;
+}
+
+/* BOX'S */
+.box-option{
+  height: 32%;
+  width: 30%;
+  background-color: #120045;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #fff;
+  font-family: sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/* Res BOX */
+#restart {
+  display: block;
+  position: relative;
+  padding: .7rem;
+  margin: 1.5rem auto 0 auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #120045;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4vmin;
+}
+
+/* Wining Message */
+.popup {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #2872fb, #61ffcd);
+}
+
+#new-game{
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background-color: #120045;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+}
+
+#message {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.popup.hide{
+  display: none;
+}
