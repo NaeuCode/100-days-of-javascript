@@ -1,0 +1,104 @@
+/* =================== Google Fonts =================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+/*=================== BASE ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(195deg, #0f9590, #294d61);
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=================== MAIN ===================*/
+.wrapper {
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 15px;
+    color: #232323;
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(225, 225, 225, .3);
+    box-shadow: 0 4px 30px rgba(225, 225, 225, .1);
+}
+
+/* Screen Box */
+.screen {
+    width: 320px;
+    padding: 20px;
+    text-align: right;
+    font-size: 35px;
+    overflow: hidden;
+    color: #232323;
+    background-color: rgba(225, 225, 225, .75);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+}
+
+
+/* Buttons */
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    height: 65px;
+    flex-basis: 20%;
+    font-size: 24px;
+    color: #232323;
+    background-color: #e1e1e1bf;
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(225, 225, 225, .1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+}
+
+.calc-button:last-child{
+    background: #d72880;
+    color: #fff;
+}
+
+.calc-button:last-child:hover{
+    background-color: #f47d2d;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #05151a;
+    color: #fff;
+}
+
+.calc-button:last-child:active{
+    background-color: #05151a;
+    color: #fff;
+}
+
+
+.double {
+    flex-basis: 47%;
+}
