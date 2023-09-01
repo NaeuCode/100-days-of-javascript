@@ -1,0 +1,62 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------- Font Awesome ---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---------------- CSS ---------------->
+    <link rel="stylesheet" href="style.css" />
+    <!------------------------------------->
+    <title>Day #4 - Weather App | NaeuCode</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="not-found">
+        <img src="images/404.png" alt="" />
+        <p>Invalid Location ...</p>
+      </div>
+
+      <div class="weather-box">
+        <img src="" alt="" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------- JavaScript ---------------->
+    <script src="https://kit.fontawesome.com/d94dee4481.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
