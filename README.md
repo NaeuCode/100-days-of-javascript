@@ -1,7 +1,7 @@
 
 # 100 Days of JavaScript
 
-Collection of <a href="https://youtube.com/#NaeuCode" target="_blank">NaeuCode</a> Youtube Channel 100 days of JavaScript Coding !
+Collection of <a href="https://youtube.com/playlist?list=PLslrTwY3jvuwqWcUpMpHmzpKWDJTEVWOS&si=eIgAcQNOSRxhZHE_" target="_blank">NaeuCode</a> Youtube Channel 100 days of JavaScript Coding !
 
 ### Tutorial Video's
 
@@ -15,3 +15,4 @@ Here we have list of projects:
 2.  Tic Tac Toe - Game:XOXO
 3.  Calculator App
 4.  Weather App
+5.  ToDo App
