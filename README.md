@@ -5,7 +5,7 @@ Collection of <a href="https://youtube.com/playlist?list=PLslrTwY3jvuwqWcUpMpHmz
 
 ### Tutorial Video's
 
-Find Video's on : <a href="https://youtube.com/@Neaucode" target="_blank">NaeuCode</a> Youtube Channel
+Find Video's on : <a href="https://www.youtube.com/channel/UCqvKvkIY8peLjoLh2LpPyAQ" target="_blank">NaeuCode</a> Youtube Channel
 
 # Projects
 
@@ -16,3 +16,4 @@ Here we have list of projects:
 3.  Calculator App
 4.  Weather App
 5.  ToDo App
+6.  QR Code Generator

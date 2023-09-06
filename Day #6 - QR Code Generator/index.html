@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------- Icon Scout ---------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!---------------- CSS ---------------->
+    <link rel="stylesheet" href="style.css">
+    <!------------------------------------------------>
+    <title>Day #6 - Qr Code Generator | NaeuCode</title>
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <input type="color" class="light" value="#ffffff">
+            <input type="color" class="dark">
+            <select class="sizes">
+                <option value="100">100×100</option>
+                <option value="200">200×200</option>
+                <option value="300">300×300</option>
+                <option selected value="400">400×400</option>
+                <option value="500">500×500</option>
+                <option value="600">600×600</option>
+            </select>
+        </div>
+
+        <input type="text" class="qr-text" placeholder="Enter QR Text">
+        <div id="qr-code"></div>
+        <div class="action-container">
+            <a href="#" class="btn download" download="QRCode">
+                <span>Download</span>
+            <i class="uil uil-import"></i>
+            </a>
+            <a href="#" class="btn share-btn">
+                <span>Share</span>
+                <i class="uil uil-share-alt"></i>
+            </a>
+        </div>
+    </section>
+    <!---------------- QR Code cdn ---------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!------------- JS ------------->
+    <script src="script.js"></script>
+</body>
+</html>
