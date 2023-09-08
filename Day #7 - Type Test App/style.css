@@ -1,0 +1,119 @@
+/* =================== Google Fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*=================== BASE ===================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(185deg, #dfba89, #1c032c);
+    font-family: "Poppins", sans-serif;
+}
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*=================== MAIN ===================*/
+  .container{
+    width: 80vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 18px;
+    background-color: rgba(225, 225, 225, .4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .stats span {
+    font-weight: 500;
+  }
+
+  #quote {
+    text-align: justify;
+    margin: 50px 0 30px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    color: #e6dbdb;
+    font-size: 1.5rem;
+  }
+
+  #quote-input{
+    resize: none;
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 16px;
+    border: 0;
+    font-family: "poppins", sans-serif;
+
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btns button {
+    margin-top: 20px;
+    background-color: rgba(225, 225, 225, .4);
+    color: #000;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  button:hover{
+    background: #483c2b;
+    color: #fff;
+    transition: transform .2 ease-out;
+  }
+
+.result {
+    margin-top: 40px;
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper span {
+    font-weight: 500;
+}
+
+.success {
+    color: #51ca77;
+}
+
+.fail{
+    color: #db1f4e;
+}
+

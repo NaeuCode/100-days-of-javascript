@@ -17,3 +17,4 @@ Here we have list of projects:
 4.  Weather App
 5.  ToDo App
 6.  QR Code Generator
+7.  Typing Speed Test

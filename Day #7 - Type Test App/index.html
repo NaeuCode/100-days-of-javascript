@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------- Icon Scout --------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!----------------- CSS ---------------->
+    <link rel="stylesheet" href="style.css">
+    <title>Day #7 - Type Test App | NaeuCode </title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="stats">
+            <i class="uil uil-stopwatch"> : <span id="timer"> 0s </span></i>
+            <i class="uil uil-exclamation-triangle"> : <span id="mistakes"> 0</span></i>
+        </div>
+
+        <div id="quote" onmousedown="return false" onselectstart="return false"></div>
+
+        <textarea id="quote-input" rows="3" placeholder="Type here when test starts ..."></textarea>
+
+        <div class="btns">
+            <button id="start-test" onclick="startTest()">Start Test</button>
+            <button id="stop-test" onclick="displayResult()">Stop Test</button>
+            <button id="restart">Restart</button>
+        </div>
+
+        <div class="result">
+            <div class="wrapper">
+                <i class="uil uil-clipboard-alt">Accuracy : <span id="accuracy"></span> </i>
+                <i class="uil uil-rocket"> Speed : <span id="wpm"></span> </i>
+            </div>
+        </div>
+    </div>
+    <!------------- JS -------------->
+    <script src="script.js"></script>
+</body>
+</html>
