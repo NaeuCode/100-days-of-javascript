@@ -1,0 +1,234 @@
+/* =================== Google Fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*=================== BASE ===================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(185deg, #89cadf, #1c032c);
+    padding: 0 10px;
+}
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*=================== MAIN ===================*/
+  .container {
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper .text-input{
+    display: flex;
+  }
+
+  .text-input .to-text{
+    border-radius: 8px;
+    background: #ccc;
+    border: 0;
+  }
+
+  .text-input textarea {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .space {
+    display: flex;
+    position: relative;
+    width: 75px;
+    z-index: 1;
+  }
+
+  .text-input textarea::placeholder{
+    color: #757575;
+  }
+
+  .controls,
+  li,
+  .icons,
+  .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .controls {
+    padding: 12px 15px;
+  }
+
+  .controls .row.from {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-left: -16px;
+    width: 50%;
+  }
+
+  .controls .row.to{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 50%;
+    margin-right: -16px;
+  }
+
+  .controls .row .icons {
+    width: 38%;
+  }
+
+  .controls .row .icons i {
+    width: 50px;
+    color: #878484;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform .2s ease;
+    justify-content: center;
+  }
+
+  .controls .row .icons i:hover{
+    color: #262626;
+    transition: transform .3s ease-out;
+  }
+
+  .container .row.from .icons {
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+
+  .container .row.to .icons {
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+
+
+  .controls .row select{
+    color: #333;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    background: 0;
+    padding-left: 5px;
+  }
+
+  .text-input textarea::-webkit-scrollbar{
+    width: 4px;
+  }
+
+  .controls .row select::-webkit-scrollbar{
+    width: 8px;
+  }
+
+  .text-input textarea::-webkit-scrollbar-track,
+  .controls .row select::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  .text-input textarea::-webkit-scrollbar-thumb{
+    background: #ddd;
+    border-radius: 8px;
+  }
+
+  .controls .row select::-webkit-scrollbar-thumb{
+    background: #999;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+  }
+
+  .controls .exchange {
+    color: #adadad;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform .3s ease;
+  }
+
+  .controls .exchange:hover {
+    color: #272727;
+    transition: transform .3s ease-out;
+  }
+
+  .controls i:active {
+    transform: scale(.9);
+  }
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 8px;
+    background: linear-gradient(181deg, #1b6984, #1c032c);
+}
+
+.btn:hover {
+    background: linear-gradient(181deg, #89cadf, #1c032c);
+}
+
+@media screen and (max-width : 550px) { 
+    .container {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .wrapper .text-input {
+        flex-direction: column;
+
+    }
+
+    .text-input .to-text{
+        border-left: 0px;
+        border-top: 1px solid #ccc;
+        margin-top: 1rem;
+    }
+
+    .text-input textarea {
+        height: 200px;
+        font-size: 14px;
+    }
+    .controls .row .icons {
+        display: none;
+    }
+    .container .btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .controls .row select {
+        font-size: 14px;
+    }
+    .controls .exchange {
+        font-size: 14px;
+    }
+
+
+    
+}

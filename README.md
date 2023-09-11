@@ -18,3 +18,4 @@ Here we have list of projects:
 5.  ToDo App
 6.  QR Code Generator
 7.  Typing Speed Test
+8.  Translator App

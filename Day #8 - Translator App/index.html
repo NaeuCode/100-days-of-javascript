@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------- Icon Scout --------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!----------------- CSS --------------->
+    <link rel="stylesheet" href="style.css">
+    <title>Day #8 - Translator App | NaeuCode </title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <ul class="controls">
+
+                <li class="row from">
+                    <select></select>
+                    <div class="icons">
+                        <i id="form" class="uil uil-volume"></i>
+                        <i id="form" class="uil uil-copy"></i>
+                    </div>
+                </li>
+
+                <li class="exchange"><i class="uil uil-exchange-alt"></i></li>
+
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i id="form"class="uil uil-volume"></i>
+                        <i id="form" class="uil uil-copy" ></i>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="text-input">
+                <textarea spellcheck="false" class="from-text" placeholder="Enter text" ></textarea>
+
+                <div class="space"></div>
+
+                <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation" ></textarea>
+
+            </div>
+
+        </div>
+        <button class="btn">Translate Text</button>
+
+    </div>
+
+
+    <!--------------- Js -------------->
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
