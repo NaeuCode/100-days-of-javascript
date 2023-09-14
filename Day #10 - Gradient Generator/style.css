@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.container {
+    background-color: #fff;
+    width: 375px;
+    padding: 50px 30px;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.container *:not(i){
+    font-family: 'Poppins' , sans-serif;
+}
+
+.colors {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="color"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 20px;
+    border: none;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.buttons button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons button:hover{
+    transition: all .2s ease-in-out;
+    scale: 1.2;
+    font-size: 18px;
+    background: #d63838;
+    color: #fff;
+}
+
+.buttons .active {
+    border: 0;
+    background-color: #d63838;
+    color: #fff;
+}
+
+#submit {
+    display: block;
+    background-color: #d63838;
+    color:  #fff;
+    font-size: 16px;
+    padding: 12px 70px;
+    border-radius: 25px;
+    margin: 0 auto 30px auto;
+    cursor: pointer;
+}
+
+.output{
+    background-color: #ccc;
+    border-radius: 14px;
+}
+
+#code {
+    width: 100%;
+    resize: none;
+    color: #30304a;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+#copy{
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    color: #d63838;
+    position: absolute;
+    left: 84%;
+    top: 77%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        width: 85%;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 40px 40px 40px 35px;
+        justify-content: center;
+    }
+
+    .buttons button{
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    .buttons button:hover{
+        transition: all .2s ease-in-out;
+        scale: 1.1;
+        font-size: 14px;
+        background: #d63838;
+        color: #fff;
+    }
+
+    #submit {
+        width: 60%;
+        font-size: 12px;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    #code{
+        width: 95%;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 14px;
+        overflow: hidden;
+    }
+
+    #copy{
+        left: 79%;
+        top: 79%;
+    }
+    
+}

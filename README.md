@@ -19,3 +19,5 @@ Here we have list of projects:
 6.  QR Code Generator
 7.  Typing Speed Test
 8.  Translator App
+9.  View Channels Chart
+10. Gradient Generator
