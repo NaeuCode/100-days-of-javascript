@@ -21,3 +21,4 @@ Here we have list of projects:
 8.  Translator App
 9.  View Channels Chart
 10. Gradient Generator
+11. Music Player App
