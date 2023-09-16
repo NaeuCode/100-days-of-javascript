@@ -3,7 +3,7 @@
 # Day #4
 
 ### Weather App
-In this tutorial ([Open in Youtube](https://youtu.be/iOHHO4D1MMs)),  I am gonna showing to you how to code a weather app with javascript. in this tutorial also we use a weather api and we get data from api❗️
+In this tutorial ([Open in Youtube](https://youtu.be/iOHHO4D1MMs?si=j_TB-6smcwCs_-yI)),  I am gonna showing to you how to code a weather app with javascript. in this tutorial also we use a weather api and we get data from api❗️
 
 ## Warning
 You need to get your own api key (in video we showed how!) and replace it in index.js file on line 9 :
@@ -17,4 +17,4 @@ const APIKey = 'Your Api Key';
 
 Here we have project screenshot :
 
-![ScreenShot](Screen.png)
+![ScreenShot](ScreenShot.png)
