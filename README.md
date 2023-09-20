@@ -22,3 +22,5 @@ Here we have list of projects:
 9.  View Channels Chart
 10. Gradient Generator
 11. Music Player App
+12. Digital Clock
+13. Snake Game
