@@ -24,3 +24,4 @@ Here we have list of projects:
 11. Music Player App
 12. Digital Clock
 13. Snake Game
+14. Text To Speech
