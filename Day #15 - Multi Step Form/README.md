@@ -7,4 +7,4 @@ this form also is responsive!
 # Screenshot
 Here we have project screenshot :
 
-![screenshot](#15.mp4)
+![screenshot](screen.png)
