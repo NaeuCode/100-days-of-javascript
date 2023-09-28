@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    border: 0;
+    outline: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2e2c53;
+    border-radius: 4px;
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: .6em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: .6em .3em;
+    border-radius: 4px;
+    color: #414a67;
+    font-weight: 400;
+    margin-bottom: .6em;
+}
+
+.total-amount-container , .user-amount-container {
+    padding: 1.25em .9em;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.output-container {
+    background: #587ef4;
+    color: #fff;
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 1.2em;
+    border: 1px solid #fff;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output-container p {
+    font-weight: 500;
+    margin: .6em;
+    border-bottom: 1px solid #fff;
+}
+
+.output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e6e6e6;
+}
+
+.submit {
+    font-size: 1em;
+    margin-top: .8em;
+    background: #fc6b21;
+    color:#fff;
+    padding: .6em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#total-amount-button {
+    margin-top: 3.6rem;
+}
+
+.list {
+    padding: 1.8em 1.2em;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin: 1rem;
+}
+
+.list h3 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.sublist-content {
+    width: 100%;
+    border-left: .3em solid #587ef4;
+    margin-bottom: .6em;
+    padding: .5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    color: #ccc;
+}
+
+.product {
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: #ff465a;
+}
+
+.edit , .delete {
+    background: transparent;
+    cursor: pointer;
+    color: #ca2b2b;
+}
+
+@media screen and (max-width:600px) {
+    .wrapper{
+        font-size: 14px;
+    }
+
+    .sub-container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    
+}
