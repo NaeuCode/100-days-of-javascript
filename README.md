@@ -28,3 +28,4 @@ Here we have list of projects:
 15. Multi Step Form
 16. Budget App
 17. Breakout Game App
+18. Crypto Price App
