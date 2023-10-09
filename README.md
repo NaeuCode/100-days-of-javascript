@@ -31,3 +31,4 @@ Here we have list of projects:
 18. Crypto Price App
 19. Shadow Generator
 20. Google Maps API
+21. Flip Coin Game
