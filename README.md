@@ -32,3 +32,7 @@ Here we have list of projects:
 19. Shadow Generator
 20. Google Maps API
 21. Flip Coin Game
+22. Responsive Animated Contact Form
+23. Github API 
+24. TradingView Widget 
+25. Image Slider
