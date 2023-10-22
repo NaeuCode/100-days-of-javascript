@@ -1,0 +1,73 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Base Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style */
+body {
+    background-color: #089b8a;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid Style */
+#grid{
+    border-collapse: collapse;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#grid tr td{
+    border: 1px solid #7c7c7c;
+    background-color: #e0e0e0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#grid tr td.active{
+    background-color: #9b9b9b;
+}
+
+#grid tr td.mine {
+    background-color: #cc0707e4;
+}
+
+/* Button Style */
+button {
+    margin: 22px 0;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #04453e;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background: #000;
+}
