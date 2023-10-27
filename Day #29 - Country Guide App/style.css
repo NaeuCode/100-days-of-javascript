@@ -1,0 +1,102 @@
+/* ======== Google Font ======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* ======= Base ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262626;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 360px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .search-box{
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .search-box i {
+    color: #ccc;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.container .search-box input {
+    all: unset;
+    height: 50px;
+    width: 100%;
+    padding-left: 5px ;
+    margin-left: 10px;
+}
+
+.container .info-box .flag-and-name {
+    width: 100%;
+}
+
+.container .info-box .flag-and-name .flag{
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.container .info-box .flag-and-name .flag img {
+    height: 90px;
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.container .info-box .flag-and-name .country-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #222;
+    margin-top: 4px;
+}
+
+.container .info-box .other-info {
+    margin-top: 20px;
+}
+
+.container .info-box .other-info h5 {
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+.container .info-box .other-info h5 span {
+    color: #838383;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.container .info-box .invalid-name-message {
+    font-size: 15px;
+    color: #838383;
+    margin-top: 15px;
+}
+
+::selection {
+    color: #fff;
+    background: #6395edcc;
+}
