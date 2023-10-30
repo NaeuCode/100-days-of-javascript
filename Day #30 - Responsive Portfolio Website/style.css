@@ -1,0 +1,293 @@
+/*============= Google Fonts ============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* ============= Base Style ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --body-color: #f4f4f4;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --secondary-2-color: #ccc;
+  --p-color: #555;
+  --input-color: #fbfbfb;
+  --input-hover-color: #f0efef;
+  --shadow-color: rgba(0, 0, 0, 0.8);
+  --border-color: #353535;
+}
+
+/* ========== Dark Theme ======== */
+body.dark-theme {
+  --body-color: #000;
+  --primary-color: #d1d1d1;
+  --secondary-color: #181818;
+  --secondary-2-color: #838383;
+  --p-color: #969595;
+  --input-color: #202020;
+  --input-hover-color: #393939;
+  --shadow-color: rgba(255, 255, 255, 0.5);
+  --border-color: #cdcdcd;
+}
+
+.change-theme {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body {
+  background: var(--body-color);
+}
+
+p {
+  color: var(--p-color);
+}
+/* ============= Header ============ */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 9px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+/*  --- logo --- */
+.logo {
+  font-size: 33px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.logo span {
+  color: var(--p-color);
+}
+
+/*  --- Navbar --- */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 2rem;
+}
+
+.nav-container ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+}
+
+.nav-container ul li a:hover {
+  color: var(--p-color);
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*  UnderLine */
+.underline {
+  position: fixed;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: width 0.2s, background-color 0.5s, transform 0.5s;
+  z-index: 1;
+  left: 0;
+}
+
+#menu-icon {
+  color: var(--primary-color);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/* Sticky Header */
+header.sticky {
+  padding: 9px 6%;
+  background: transparent;
+  backdrop-filter: blur(55px);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+/* ========= Section ========= */
+section {
+  padding-top: 15vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+/* ========= Profile Section ========= */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 90vh;
+}
+
+/* ---- Pic-Profile ---- */
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.profile-pic {
+  border-radius: 40%;
+  box-shadow: 0 0 7px var(--shadow-color);
+}
+
+/* ---- Text Section ---- */
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: var(--p-color);
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section__text__p3 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* ---- Social Media ---- */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+/* --- Icon Part --- */
+.social-icon {
+  color: var(--body-color);
+  background: var(--p-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+/* ======== Button Part ======= */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background: transparent;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: 1px solid var(--border-color);
+  color: var(--p-color);
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--border-color);
+  color: var(--body-color);
+  cursor: pointer;
+}
+
+.btn-color-1:hover {
+  background: var(--border-color);
+}
+
+/* ========== About Section ========= */
+
+
+/* ========== Skills Section ========== */
+
+
+/* =========== Projects Section ========== */
+
+
+/* ============= Contact Section ========== */
+
+
+/* ====== CopyRight ===== */
+
+
+/* ====== Scroll TOp ===== */
+
+
+/* !================== Media Queries ============== */
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 540px) {
+
+}
+
+@media screen and (max-width: 390px) {
+
+}
