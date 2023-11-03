@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------ CSS --------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ------------ CDN FontAwesome --------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Day #31 - Stopwatch | NaeuCode </title>
+</head>
+<body>
+    <div class="container">
+        <h4 class="app-title">
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+             Stopwatch
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+        </h4>
+
+        <div class="timer">
+            <span class="hour">00</span>:
+            <span class="minute">00</span>:
+            <span class="sec">00</span>.
+            <span class="ms">00</span>
+        </div>
+
+        <button class="lap" onclick="lap()">Lap</button>
+        <button class="stop other-side" onclick="stop()">Stop</button>
+        <button class="reset" onclick="reset()">Reset</button>
+        <button class="start other-side" onclick="start()">Start</button>
+
+        <div class="lap-container">
+
+        </div>
+
+    </div>
+
+    <!-- ------- JavaScript ------- -->
+    <script src="script.js"></script>
+</body>
+</html>

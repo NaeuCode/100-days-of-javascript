@@ -1,0 +1,137 @@
+/* =========== Google Fonts ========= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Share+Tech+Mono&display=swap');
+
+/* =========== Base ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
+    background: #000;
+}
+
+.container {
+    background: #066c70;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 350px;
+    height: 280px;
+    border-radius: 7px;
+    transition: all .2s;
+}
+
+.container .app-title {
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.app-title span {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.container .timer {
+    height: 70px;
+    width: 300px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 2.2rem;
+}
+
+.container .timer span {
+    font-size: 60px;
+    word-spacing: 3px;
+}
+
+.container .timer .ms {
+    font-size: 13px;
+    position: relative;
+    top: -8px;
+    color: #fff;
+}
+
+.container button {
+    all: unset;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 30px;
+    margin-left: 15px;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.container button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.container .other-side {
+    position: absolute;
+    right: 35px;
+}
+
+.container .stop,
+.container .lap {
+    display: none;
+}
+
+.container .lap-container {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 105px;
+    padding: 8px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+.container .lap-container::-webkit--scroll {
+    display: none;
+}
+
+.container .lap-container li {
+    list-style-type: none;
+    height: 47px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.container .lap-container li .lap-num {
+    color: #000;
+    font-family: 'poppins',sans-serif;
+}
+
+.container .lap-container li .lap-timer {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+}
+
+::selection {
+    background: #fff;
+    color: #222;
+}
