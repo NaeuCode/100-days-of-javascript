@@ -42,3 +42,4 @@ Here we have list of projects:
 29. Country Guide App
 30. Responsive Portfolio Website
 31. Stopwatch APP
+32. BMI Calculator APP

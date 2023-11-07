@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0572c0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.container {
+    padding: 25px;
+    width: 350px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .2s ease;
+}
+
+.container .app-title {
+    text-align: center;
+    font-size: 22px;
+    color: #0572c0;
+}
+
+.container .box {
+    height: 120px;
+    width: 300px;
+    background: #fff;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+}
+
+.container .box h4 {
+    text-align: center;
+}
+
+.container .box input {
+    all: unset;
+    height: 40px;
+    width: 200px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.container .calculate-btn {
+    all: unset;
+    height: 45px;
+    width: 100%;
+    color: #fff;
+    background: #0572c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.container .result-box {
+    display: none;
+}
+
+.container .result-box .yr-bmi-txt {
+    text-align: center;
+    margin-top: 17px;
+    font-weight: 500;
+}
+
+.container .result-box .bmi {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0572c0;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+    margin: auto;
+    width: 120px;
+    margin-top: 5px;
+    font-size: 23px;
+}
+
+.container .result-box .result {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.container .result-box .result span {
+    color: #0572c0;
+}
+
+::selection {
+    background: rgb(100, 149, 237);
+    color: #fff;
+}
+
