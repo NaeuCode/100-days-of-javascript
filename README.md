@@ -44,3 +44,4 @@ Here we have list of projects:
 31. Stopwatch APP
 32. BMI Calculator APP
 33. Simon Game App
+34. Parallax Slider
