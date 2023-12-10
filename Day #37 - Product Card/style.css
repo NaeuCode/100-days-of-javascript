@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2175f5;
+}
+
+body {
+    background-color: #efefef;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoodie-bg {
+    position: relative;
+    width: 50%;
+    height: 468px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, .1), 0 -15px 35px rgba(0, 0, 0, .1), 0 15px 35px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.gradients {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.first {
+    z-index: 0;
+    animation: 1s width ease;
+}
+
+@keyframes width {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.second {
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+}
+
+.gradient[color="blue"] {
+    background-image: linear-gradient(45deg, #0136af, #22abfa);
+}
+.gradient[color="red"] {
+    background-image: linear-gradient(45deg, #d62926, #ee625f);
+}
+.gradient[color="green"] {
+    background-image: linear-gradient(45deg, #11998e, #1ce669);
+}
+.gradient[color="orange"] {
+    background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+.gradient[color="gray"] {
+    background-image: linear-gradient(45deg, #111, #666);
+}
+
+.share {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--primary);
+    transition: .5s;
+}
+
+.share:hover {
+    transform: scale(1.1);
+}
+
+.nike {
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    font-size: 11rem;
+    text-transform: uppercase;
+    line-height: .9;
+    color: #fff;
+    opacity: .1;
+}
+
+.hoodie {
+    position: absolute;
+    width: 85%;
+    opacity: 0;
+    bottom: 35px;
+    right: 35px;
+    transform: rotate(-10deg);
+    transition: .5s;
+}
+
+.hoodie.show {
+    opacity: 1;
+}
+
+.info {
+    width: 50%;
+    background-color: #fff;
+    z-index: 1;
+    padding: 35px 40px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, .1), 0 -15px 35px rgba(0, 0, 0, .1), 0 15px 35px rgba(0, 0, 0, .1);
+}
+
+.hoodie-name {
+    padding: 0 0 10px 0;
+}
+
+.first-title {
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.super-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.super-title .sec-title {
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1;
+}
+
+.super-title .stock {
+    background-color: var(--primary);
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.hoodie-name,
+.description,
+.customize {
+    border-bottom: 1px solid #dadada;
+}
+
+.review {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.review .star {
+    color: var(--primary);
+    transition: .5s;
+}
+
+.review .reviews {
+    margin-left: 6px;
+    text-decoration: underline;
+}
+
+.description {
+    padding: 10px 0;
+}
+
+.title {
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.subtitle {
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.text {
+    color: #555;
+    font-size: 18px;
+}
+
+.customize {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 1rem;
+}
+
+.colors {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 3px solid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.color[color="blue"] {
+    background-color: #2175f5;
+    border-color: #2175f5;
+}
+
+.color[color="red"] {
+    background-color: #f84848;
+    border-color: #f84848;
+}
+
+.color[color="green"] {
+    background-color: #29b864;
+    border-color: #29b864;
+}
+
+.color[color="orange"] {
+    background-color: #ff5521;
+    border-color: #ff5521;
+}
+
+.color[color="gray"] {
+    background-color: #545454;
+    border-color: #545454;
+}
+
+.color.active {
+    border-color: #fff;
+    box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.sizes {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.size {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 5px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.size.active{
+    background-color: var(--primary);
+    color: #fff;
+    transition: .5s;
+}
+
+.buy-price {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+
+.price h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price i {
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+
+.buy {
+    padding: .7rem 1rem;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: .6rem;
+    transition: .5s;
+}
+
+.buy:hover {
+    transform: scale(1.1);
+}
+
+.buy i {
+    margin-right: 2px;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+    margin-right: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter a {
+    font-size: .6rem;
+    padding: .4rem;
+    color: #000;
+}
+
+.counter-value {
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    font-size: .9rem;
+    border-radius: 7px;
+    padding: 2px 10px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 910px) {
+    .hoodie {
+        transform: rotate(-5deg) translateY(-60%);
+        top: 55%;
+        right: 0;
+    }
+
+    .hoodie-name .first-title {
+        font-size: 12px;
+    }
+    .super-title .sec-title{
+        font-size: 1.6rem;
+    }
+    .super-title .stock {
+        font-size: .8rem;
+    }
+    .review {
+        font-size: .7rem;
+    }
+    .subtitle{
+        font-size: .8rem;
+    }
+    .text {
+        font-size: .9rem;
+    }
+    .title {
+        font-size: .7rem;
+    }
+    .color {
+        width: 12px;
+        height: 12px;
+        margin: 0 3px;
+        border: 2px solid;
+    }
+    .size {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px;
+        font-size: 12px;
+    }
+    .buy {
+        font-size: .6rem;
+    }
+    .price h1 {
+        font-size: 1.2rem;
+    }
+    .nike {
+        font-size: 9rem;
+    }
+    .share {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        flex-direction: column;
+        box-shadow: 0 0 35px 1px rgba(0, 0, 0, .2);
+    }
+    .card > div {
+        width: 100%;
+        box-shadow: none;
+    }
+    .logo {
+        width: 50px;
+    }
+    .hoodie{
+        width: 50%;
+        transform: rotate(-5deg) translateY(-55%) translateX(-10%);
+        top: 55%;
+        right: 0;
+    }
+    .nike {
+        top: 30%;
+        left: 5%;
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .super-title .sec-title {
+        font-size: 1.5rem;
+    }
+    .super-title .stock {
+        font-size: .7rem;
+    }
+    .logo {
+        width: 35px;
+    }
+    .share {
+        width: 20px;
+        height: 20px;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .super-title .sec-title {
+        font-size: 1.2rem;
+    }
+    .super-title .stock {
+        font-size: .5rem;
+    }
+    .buy {
+        font-size: .6rem;
+    }
+    .price h1 {
+        font-size: 1.3rem;
+    }
+    .nike {
+        font-size: 7.5rem;
+    }
+    .counter a {
+        font-size: .5rem;
+    }
+    .counter-value {
+        font-size: .7rem;
+    }
+}
+
