@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game | NaeuCode YouTube Channel</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="choices">
+            <div class="user-choice">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </div>
+            <div class="computer-choice">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </div>
+            <h4 class="result">Let's play</h4>
+        </div>
+
+        <div class="btns">
+            <div class="rock" onclick="play('rock',this)">
+                <i class="fa-regular fa-hand-back-fist"></i>
+                <p>Rock</p>
+            </div>
+            <div class="paper" onclick="play('paper',this)">
+                <i class="fa-regular fa-hand"></i>
+                <p>Paper</p>
+            </div>
+            <div class="scissor" onclick="play('scissor',this)">
+                <i class="fa-regular fa-hand-scissors"></i>
+                <p>Scissor</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

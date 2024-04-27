@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #531414;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    height: 280px;
+    width: 330px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+}
+
+.btns {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.btns div {
+    height: 80px;
+    width: 80px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    left: 25px;
+}
+
+.btns div i {
+    font-size: 33px;
+    color: #8a8a8a;
+    margin-top: 5px;
+}
+
+.btns div p {
+    font-size: 11px;
+    position: relative;
+    top: 4px;
+    color: #8a8a8a;
+}
+
+.btns div:hover i,
+.btns div:hover p {
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.choices {
+    height: 130px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.choices div {
+    font-size: 75px;
+    color: #2d2828;
+}
+
+/* Rotate the first child of .choices 90 degrees clockwise */
+.choices div:nth-child(1) {
+    transform: rotate(90deg);
+    transition: all .2s;
+}
+
+/* Rotate the second child of .choices 270 degrees counterclockwise and flip horizontally */
+.choices div:nth-child(2) {
+    transform: rotate(270deg) scaleX(-1);
+    position: absolute;
+    right: 30px;
+    transition: all .2s;
+}
+
+/* Rotate the Scissors icon for user choice */
+.user-choice .fa-hand-scissors {
+    transform: rotate(-270deg) scaleY(-1);
+}
+
+/* Rotate and flip the Scissors icon for computer choice */
+.computer-choice .fa-hand-scissors {
+    transform: rotate(-80deg) scaleX(-1);
+}
+
+/* Style for the heading inside .choices */
+.result {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    top: 50%;
+}
+
+/* Apply animation to user choice icon */
+.user-choice.user-icon-animate {
+    animation: userIcon 2s linear infinite;
+}
+
+/* Apply animation to computer choice icon */
+.computer-choice.computer-icon-animate {
+    animation: computerIcon 2s linear infinite;
+}
+
+/* Keyframes animation for user choice icon */
+@keyframes userIcon {
+    0% {
+        transform: rotate(50deg);
+    }
+
+    50% {
+        transform: rotate(125deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+    }
+}
+
+/* Keyframes animation for computer choice icon */
+@keyframes computerIcon {
+    0% {
+        transform: rotate(-50deg) scaleX(-1);
+    }
+
+    50% {
+        transform: rotate(-125deg) scaleX(-1);
+    }
+
+    100% {
+        transform: rotate(-50deg) scaleX(-1);
+    }
+}
